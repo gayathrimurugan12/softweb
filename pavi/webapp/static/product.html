@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Product Page </title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .bg-product {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color: palevioletred;
+                border-radius: 30px;
+            }
+            .logo {
+                color: palevioletred;
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: 3px;
+            }
+            span {
+                color: white;
+            }
+            form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: hsla(0, 3%, 77%, 0.2);
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 15px;
+                color: white;
+            } 
+            ::placeholder {
+                color: white;
+            }
+            form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color: white;
+                border-radius: 10px;
+                background: palevioletred;
+                cursor: pointer;
+            }
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color: palevioletred;
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .container {
+                background: transparent;
+                padding: 10px 5%;
+                padding-bottom: 100px;
+            }
+            .container .box-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+                gap: 20px;
+            }
+            .container .box-container .box {
+                color: white;
+                box-shadow: 0 5px 10px rgba(0,0,0,.2);
+                border-radius: 20px;
+                background: transparent;
+                border: 1px solid white;
+                padding: 30px 20px;
+            }
+            .container .box-container .box img {
+                height: 70px;
+                border-radius: 20px;
+            }
+            .container .box-container .box h3 {
+                color: palevioletred;
+                font-size: large;
+                padding: 10px 0;
+            }
+            .container .box-container .box p {
+                color: white;
+                font-size: small;
+                line-height: 1.5;
+            }
+            footer {
+                background-color: palevioletred;
+                margin-top: auto;
+            }
+        </style>
+    </head>
+<body>
+    <div class="banner">
+        <br>
+        <div class="navbar">
+            <h1 class="logo">T<span>ime</span>X<span>perts</span></h1>
+            <ul>
+                <li><a href="http://127.0.0.1:8000/static/homepage.html"> Home </a></li>
+                <li><a href="http://127.0.0.1:8000/static/products.html" class="bg-product"> Products </a></li>
+                <li><a href="http://127.0.0.1:8000/static/person.html"> People </a></li>
+                <li><a href="http://127.0.0.1:8000/static/contactus.html"> Contact Us </a></li>
+            </ul>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="box-container">
+                <div class="box">
+                    <img src=" logo1.jpg" alt="">
+                    <h3> FusionCharts Suite XT </h3>
+                    <p> Platform for data-driven maps. </p>
+                </div>
+                <div class="box">
+                    <img src="logo2.jpg" alt="">
+                    <h3> Fusion Export </h3>
+                    <p> Export full Dashboards as PDFs for use in reports and emails. </p>
+                </div>
+                <div class="box">
+                    <img src="logo3.jpg" alt="">
+                    <h3> Fusion Grid </h3>
+                    <p> Rocket fuel for data intensive applications with integrated charting. </p>
+                </div>
+                <div class="box">
+                    <img src=" logo5.jpg" alt="">
+                    <h3> Fusion Time </h3>
+                    <p> Plot high-performance time-series visualizations. </p>
+                </div>
+                <div class="box">
+                    <img src="logo4.jpg" alt="">
+                    <h3> Yellowfin BI and Analytics </h3>
+                    <p> Powerful and flexible embedded analytics platform.. </p>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center> Designed and Developed by GAYATHRI(212223220024) </center>
+    </footer>
+</body>
+</html>
